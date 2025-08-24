@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Unit Converter Tool</h1>
+
+    <!-- Category Selection -->
+    <label for="category">Select Category:</label>
+    <select id="category">
+      <option value="length">Length</option>
+      <option value="weight">Weight</option>
+      <option value="temperature">Temperature</option>
+    </select>
+
+    <!-- Input Value -->
+    <div class="input-section">
+  <!-- Input stays vertical on top -->
+  <input type="number" id="inputValue" placeholder="Enter value">
+  
+  <!-- Wrap units + swap in a row -->
+  <div class="units-row">
+    <select id="fromUnit"></select>
+    <button id="swapBtn">↔</button>
+    <select id="toUnit"></select>
+  </div>
+</div>
+
+
+    <!-- Result -->
+    <h2 id="result">Result: </h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
